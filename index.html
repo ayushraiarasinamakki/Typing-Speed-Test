@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Typing Speed Test</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="app">
+    <header class="header">
+      <h1 class="title">Typing Speed Test</h1>
+      <div class="best">Best: <span id="bestWpm">0</span> WPM</div>
+    </header>
+
+    <main>
+      <section class="sentence-section">
+        <div id="sentence" class="sentence" aria-live="polite"></div>
+      </section>
+
+      <section class="input-section">
+        <textarea
+          id="input"
+          class="input"
+          rows="3"
+          placeholder="Start typing here..."
+          aria-label="Typing area"
+          autocomplete="off"
+        ></textarea>
+      </section>
+
+      <section class="stats">
+        <div class="stat"><span class="label">WPM</span><span id="wpm" class="value">0</span></div>
+        <div class="stat"><span class="label">Accuracy</span><span id="accuracy" class="value">100%</span></div>
+        <div class="stat"><span class="label">Time</span><span id="time" class="value">0.0s</span></div>
+      </section>
+
+      <section class="controls">
+        <button id="newTest" class="btn" type="button">New Test</button>
+      </section>
+
+      <section id="result" class="result" hidden>
+        <p>
+          You finished! WPM: <strong id="finalWpm">0</strong>,
+          Accuracy: <strong id="finalAccuracy">0%</strong>
+        </p>
+      </section>
+    </main>
+  </div>
+  <footer class="footer">
+    <p>@typing speed test</p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
