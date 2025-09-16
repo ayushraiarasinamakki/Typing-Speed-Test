@@ -195,3 +195,10 @@ body {
   .stat { padding: 8px 10px;}
   .btn { padding: 10px 12px; font-size: 14px;}
 }
+
+.footer{
+  text-align: center;
+  margin-top: 180px;
+  font-size: 15px;
+  color: #080d13;
+}
